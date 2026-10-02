@@ -1,0 +1,90 @@
+:root {
+  --teal: #177998;
+  --teal-dark: #0f637e;
+  --dark: #20262a;
+  --gray: #616a6f;
+  --orange: #db8636;
+  --divider: #cbd6db;
+  --bg: #ffffff;
+  --soft: #f7f9fa;
+  --radius: 10px;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: var(--dark);
+  background: var(--bg);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--teal); }
+a:hover { color: var(--teal-dark); }
+img { max-width: 100%; height: auto; }
+.wrap { max-width: 760px; margin: 0 auto; padding: 0 16px; }
+
+/* Header */
+.site-header { border-bottom: 1px solid var(--divider); background: #fff; }
+.header-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 14px; padding-bottom: 14px; }
+.brand-logo { height: 48px; width: auto; display: block; }
+.nav { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; font-size: 0.95rem; }
+.nav a { color: var(--dark); text-decoration: none; font-weight: 600; }
+.nav a:hover { color: var(--teal); }
+.nav .nav-cta { background: var(--teal); color: #fff; padding: 7px 14px; border-radius: 999px; }
+.nav .nav-cta:hover { background: var(--teal-dark); color: #fff; }
+
+main.wrap { padding-top: 32px; padding-bottom: 48px; }
+
+/* Home */
+.intro h1 { color: var(--orange); font-size: 2rem; line-height: 1.2; margin: 0 0 10px; }
+.lede { color: var(--gray); font-size: 1.1rem; margin: 0 0 28px; }
+.post-card { border-top: 1px solid var(--divider); padding: 22px 0; }
+.post-card h2 { margin: 2px 0 4px; font-size: 1.35rem; line-height: 1.3; }
+.post-card h2 a { color: var(--dark); text-decoration: none; }
+.post-card h2 a:hover { color: var(--teal); }
+.card-date { color: var(--gray); font-size: 0.88rem; margin: 0 0 8px; }
+.read-more { font-weight: 600; text-decoration: none; }
+.eyebrow { color: var(--orange); text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.78rem; font-weight: 700; margin: 0; }
+.empty { color: var(--gray); }
+
+/* Post */
+.post-header h1 { font-size: 2rem; line-height: 1.2; margin: 6px 0 8px; }
+.byline { color: var(--gray); font-size: 0.95rem; margin: 0 0 24px; }
+.post-body { font-size: 1.06rem; }
+.post-body h2 { color: var(--teal-dark); font-size: 1.4rem; margin: 32px 0 8px; line-height: 1.3; }
+.post-body h3 { font-size: 1.15rem; margin: 24px 0 6px; }
+.post-body table { width: 100%; border-collapse: collapse; margin: 16px 0; font-size: 0.95rem; display: block; overflow-x: auto; }
+.post-body th, .post-body td { text-align: left; padding: 8px 10px; border-bottom: 1px solid var(--divider); }
+.post-body th { color: var(--gray); font-weight: 600; }
+.post-body blockquote { margin: 20px 0; padding: 12px 16px; border-left: 4px solid var(--orange); background: var(--soft); }
+.cta-box { margin: 40px 0 16px; padding: 22px; background: var(--soft); border-radius: var(--radius); border: 1px solid var(--divider); }
+.cta-box h2 { margin: 0 0 6px; font-size: 1.2rem; color: var(--dark); }
+.cta-links { display: flex; gap: 10px; flex-wrap: wrap; margin: 14px 0 0; }
+.btn { display: inline-block; background: var(--orange); color: #fff; text-decoration: none; font-weight: 700; padding: 10px 18px; border-radius: 999px; }
+.btn:hover { color: #fff; filter: brightness(0.95); }
+.btn-ghost { background: transparent; color: var(--teal); border: 2px solid var(--teal); }
+.btn-ghost:hover { color: var(--teal-dark); }
+.back { margin-top: 24px; }
+.about-photo { width: 160px; border-radius: 50%; float: right; margin: 0 0 12px 20px; }
+.about h1 { color: var(--orange); }
+
+/* Footer */
+.site-footer { border-top: 1px solid var(--divider); background: var(--soft); padding: 28px 0; font-size: 0.92rem; }
+.footer-id { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.headshot { width: 64px; height: 64px; border-radius: 50%; object-fit: cover; }
+.footer-signature { font-weight: 700; margin: 0 0 2px; }
+.footer-signature a { color: var(--dark); text-decoration: none; }
+.footer-meta { color: var(--gray); margin: 0; }
+.broker-logo { height: 40px; width: auto; margin-left: auto; }
+.footer-disclaimer { color: var(--gray); font-size: 0.78rem; line-height: 1.5; margin: 18px 0 0; }
+
+@media (max-width: 560px) {
+  .intro h1, .post-header h1 { font-size: 1.6rem; }
+  .nav { gap: 12px; font-size: 0.9rem; }
+  .broker-logo { margin-left: 0; }
+  .about-photo { float: none; display: block; margin: 0 auto 16px; }
+}
+.draft-flag { display:inline-block; background:#db8636; color:#fff; font-weight:700; font-size:.75rem; padding:3px 10px; border-radius:999px; letter-spacing:.06em; margin:0 0 8px; }
+body { min-height: 100vh; display: flex; flex-direction: column; }
+main.wrap { flex: 1; width: 100%; }

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page_title }}</title>
+  <meta name="description" content="{{ page_description }}">
+  <meta name="author" content="{{ a.name }}">
+  <link rel="canonical" href="{{ canonical }}">
+  <meta property="og:site_name" content="{{ site.title }}">
+  <meta property="og:title" content="{{ page_title }}">
+  <meta property="og:description" content="{{ page_description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:type" content="{{ og_type }}">
+  <meta property="og:image" content="{{ site.url }}/assets/img/headshot.jpg">
+  <meta name="twitter:card" content="summary">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="icon" href="/assets/img/logo.png">
+  <script type="application/ld+json">{{ agent_schema }}</script>
+  {% if post_schema %}<script type="application/ld+json">{{ post_schema }}</script>{% endif %}
+  {% if faq_schema %}<script type="application/ld+json">{{ faq_schema }}</script>{% endif %}
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="/"><img src="/assets/img/logo.png" alt="Josh Stepakoff Real Estate" class="brand-logo"></a>
+      <nav class="nav">
+        <a href="/">Blog</a>
+        <a href="/about/">About</a>
+        <a href="{{ a.site }}">Main Site</a>
+        <a class="nav-cta" href="tel:{{ a.phone_e164 }}">Call {{ a.phone }}</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+{{ body }}
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-id">
+        <img class="headshot" src="/assets/img/headshot.jpg" alt="Josh Stepakoff" loading="lazy">
+        <div>
+          <p class="footer-signature">Josh Stepakoff | <a href="tel:{{ a.phone_e164 }}">{{ a.phone }}</a> | <a href="{{ a.site }}">joshstepakoff.com</a></p>
+          <p class="footer-meta">{{ a.title }} | {{ a.brokerage }}</p>
+          <p class="footer-meta">DRE #{{ a.dre }} | {{ a.street }}, {{ a.city }}, {{ a.region }} {{ a.zip }}</p>
+        </div>
+        <img class="broker-logo" src="/assets/img/pinnacle-logo.png" alt="Pinnacle Estate Properties" loading="lazy">
+      </div>
+      <p class="footer-disclaimer">Information deemed reliable but not guaranteed. If your home is currently listed with another broker, please disregard this as it is not our intention to solicit the listings of other brokers. Market data is based in whole or in part on data supplied by the Association of Realtors or its multiple listing service. Neither the association nor its MLS guarantees or is in any way responsible for its accuracy. Sales statistics are for informational purposes only and reflect the activity of all Realtors, not the listings and sales of Joshua Stepakoff and Pinnacle Estate Properties, Inc. alone.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,4 @@
-I'm a San Fernando Valley native and a Realtor with Pinnacle Estate Properties, where I also serve as E.V.P. of Operations. I live in Northridge with my wife and two daughters, and I studied at Cal State Northridge and Pepperdine.
+I'm a San Fernando Valley native and a Realtor with Pinnacle Estate Properties, where I also serve as E.V.P. of Operations. I live in Northridge with my wife and three children, and I studied at Cal State Northridge and Pepperdine.
 
 I write this blog to give Valley homeowners and buyers a real read on the market, not an algorithm's guess. My home valuations use recent, closely matched sales of similar homes, the same way an appraiser would approach it.
 
